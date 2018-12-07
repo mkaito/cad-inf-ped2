@@ -1,0 +1,58 @@
+* PED2
+Curso de Acceso Directo 2018/19.
+
+Fundamentos de la Informática.
+
+Prueba de Evaluación a Distancia 2.
+
+Vea el enunciado [[file:PED2.pdf][aqui]].
+
+** Dependencias de sistema.
+Si usa usted [[https://nixos.org/nix/][Nix]], tan solo deberá abrir una =nix-shell=, que contendrá todas las
+dependencias necesarias.
+
+De lo contrario:
+
+- Será necesario una distribución de [[https://rustup.rs/][Rust]].
+- Bajo Windows, necesitará también VS 2012, VS 2015, o VS 2017, con el componente VSC++ instalado.
+- Bajo macOS, necesitará la herramienta XCode.
+
+** Instrucciones de compilación
+Este repositorio contiene un proyecto Cargo con dos ejecutables:
+
+- =hola=
+- =numero_mayor=
+
+Para compilar estos ejecutables:
+
+#+BEGIN_SRC
+❯ cargo build
+#+END_SRC
+
+Tras lo cual, los ejecutables se encuentran en el directorio =target/debug=.
+
+Puede compilar y ejecutar al mismo tiempo:
+
+#+BEGIN_SRC
+❯ cargo run --bin hola
+❯ cargo run --bin numero_mayor
+#+END_SRC
+
+** Sesiones de ejemplo
+
+#+BEGIN_SRC
+❯ cargo run --bin hola
+Hola!
+Alumno: Christian Markwart Höppner.
+Asignatura: Fundamentos de la Informática.
+Curso: CAD 2018/19.
+#+END_SRC
+
+#+BEGIN_SRC
+❯ cargo run --bin numero_mayor
+Hola!
+Introduzca el primer número: 2
+Introduzca el segundo número: 12
+El número mayor es 12.
+Gracias y hasta luego.
+#+END_SRC
