@@ -1,3 +1,5 @@
+[[https://travis-ci.org/mkaito/cad-inf-ped2][file:https://travis-ci.org/mkaito/cad-inf-ped2.svg?branch=master]]
+
 * PED2
 Curso de Acceso Directo 2018/19.
 
