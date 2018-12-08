@@ -1,4 +1,4 @@
-extern crate dont_disappear;
+extern crate ped2;
 
 fn main() {
     println!("Hola!");
@@ -8,5 +8,5 @@ fn main() {
     println!("Curso: CAD 2018/19.");
 
     println!("Gracias y hasta luego.");
-    dont_disappear::any_key_to_continue::custom_msg("Presione cualquier tecla para continuar...");
+    ped2::pause("Presione cualquier tecla para salir...");
 }

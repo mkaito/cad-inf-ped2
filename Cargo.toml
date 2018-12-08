@@ -1,7 +1,6 @@
 [package]
-name = "PED2"
+name = "ped2"
 version = "0.1.0"
 authors = ["Christian Höppner <choppner1@alumno.uned.es>"]
 
 [dependencies]
-dont_disappear = "2.2.0"
