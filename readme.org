@@ -58,3 +58,30 @@ Introduzca el segundo número: 12
 El número mayor es 12.
 Gracias y hasta luego.
 #+END_SRC
+
+** Autoría
+El contenido de este repositorio es propiedad legal de Christian Höppner, quien
+lo publica con la esperanza de que resulte útil, pero sin ningún tipo de
+responsabilidad o garantía.
+
+Puede usted hacer cualquier tipo de uso, pero si lo modifica de cualquier
+manera, estará obligado legalmente a compartir sus modificaciones con el
+público, bajo los acuerdos de la GNU General Public License, versión 3.
+
+** Aviso de copyright
+Copyright © 2018 Christian Höppner
+
+This file is part of the class assignment PED2 for CAD 2018/19.
+
+PED2 is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+PED2 is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Foobar.  If not, see <https://www.gnu.org/licenses/>.
