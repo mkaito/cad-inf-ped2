@@ -8,13 +8,8 @@ fn leer_numero(mensaje: &str) -> u32 {
     io::stdin().read_line(&mut buffer)
         .expect("Ha ocurrido un error al leer stdin.");
 
-    let n = buffer.trim().parse::<u32>();
-    match n {
-        Ok(numero) => numero,
-        Err(error) => {
-            panic!("El dato introducido no es un número válido: {}\n{:?}", buffer.trim(), error)
-        },
-    }
+    buffer.trim().parse::<u32>()
+        .expect("El dato introducido no es un número válido")
 }
 
 fn main() {
