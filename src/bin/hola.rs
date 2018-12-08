@@ -8,5 +8,5 @@ fn main() {
     println!("Curso: CAD 2018/19.");
 
     println!("Gracias y hasta luego.");
-    ped2::pause("Presione cualquier tecla para salir...");
+    ped2::pause();
 }

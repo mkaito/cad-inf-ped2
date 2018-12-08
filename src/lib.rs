@@ -11,8 +11,8 @@ pub fn leer_numero(mensaje: &str) -> u32 {
         .expect("El dato introducido no es un número válido")
 }
 
-pub fn pause(mensaje: &str) {
-    print!("{}", mensaje);
+pub fn pause() {
+    print!("Presione Enter para salir...");
     io::stdout().flush().unwrap();
     let _ = io::stdin().read(&mut [0]).unwrap();
 }
