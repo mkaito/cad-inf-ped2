@@ -3,4 +3,16 @@ name = "ped2"
 version = "0.1.0"
 authors = ["Christian Höppner <choppner1@alumno.uned.es>"]
 
+[lib]
+name = "ped2"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hola"
+path = "src/bin/hola.rs"
+
+[[bin]]
+name = "numero_mayor"
+path = "src/bin/numero_mayor.rs"
+
 [dependencies]
