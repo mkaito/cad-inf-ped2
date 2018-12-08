@@ -1,22 +1,28 @@
 use std::io::{self, Write};
 extern crate dont_disappear;
 
+fn leer_numero(mensaje: &str) -> u32 {
+    let mut buffer = String::new();
+    print!("{}: ", mensaje);
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut buffer)
+        .expect("Ha ocurrido un error al leer stdin.");
+
+    let n = buffer.trim().parse::<u32>();
+    match n {
+        Ok(numero) => numero,
+        Err(error) => {
+            panic!("El dato introducido no es un número válido: {}\n{:?}", buffer.trim(), error)
+        },
+    }
+}
+
 fn main() {
     println!("Hola!");
 
-    let mut buffer = String::new();
-    print!("Introduzca el primer número: ");
-    io::stdout().flush().unwrap();
-    io::stdin().read_line(&mut buffer)
-        .expect("Ha ocurrido un error al leer stdin.");
-    let n1: u32 = buffer.trim().parse().unwrap();
-
-    buffer = String::new();
-    print!("Introduzca el segundo número: ");
-    io::stdout().flush().unwrap();
-    io::stdin().read_line(&mut buffer)
-        .expect("Ha ocurrido un error al leer stdin.");
-    let n2: u32 = buffer.trim().parse().unwrap();
+    // Leer dos números de stdin a u32
+    let n1 = leer_numero("Introduzca el primer número");
+    let n2 = leer_numero("Introduzca el segundo número");
 
     // Escribir un mensaje dependiendo de la comparación entre los dos números
     if n1 == n2 {
